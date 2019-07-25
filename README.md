@@ -8,7 +8,7 @@ with specified commands in each of the splits.
 ### vertical_n.py
 
 ```
-python vertical_n.py  > /tmp/terminator_config  ; terminator -g /tmp/terminator_config
+python util_vertical_n.py --commands 'ls a' 'ls b' 'ls c' > /tmp/config ; terminator -g /tmp/config
 ```
 
 ![](pics/vertical_n.png)
@@ -16,9 +16,8 @@ python vertical_n.py  > /tmp/terminator_config  ; terminator -g /tmp/terminator_
 
 ### horizontal_n.py
 
-
 ```
-python horizontal_n.py  > /tmp/terminator_config  ; terminator -g /tmp/terminator_config
+python util_horizontal_n.py --commands 'ls a' 'ls b' 'ls c' > /tmp/config ; terminator -g /tmp/config
 ```
 
 ![](pics/horizontal_n.png)
