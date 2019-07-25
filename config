@@ -2,36 +2,48 @@
 [keybindings]
 [layouts]
   [[default]]
+    [[[hsplit0]]]
+      parent = window0
+      ratio = 0.250000
+      type = HPaned
+    
+    [[[hsplit1]]]
+      parent = hsplit0
+      ratio = 0.333333
+      type = HPaned
+    
+    [[[hsplit2]]]
+      parent = hsplit1
+      ratio = 0.500000
+      type = HPaned
     
     [[[terminal0]]]
       command = ' echo "==== ls / ===="; ls /; bash '
       order = 0
-      parent = vsplit1
+      parent = hsplit2
       profile = default
       type = Terminal
     
     [[[terminal1]]]
       command = ' echo "==== ls /home ===="; ls /home; bash '
       order = 1
-      parent = vsplit0
+      parent = hsplit0
       profile = default
       type = Terminal
     
     [[[terminal2]]]
-      command = ' echo "==== ls / ===="; ls /; bash '
+      command = ' echo "==== ls /dev ===="; ls /dev; bash '
       order = 2
-      parent = vsplit1
+      parent = hsplit1
       profile = default
       type = Terminal
-    [[[vsplit0]]]
-      parent = window0
-      ratio = 0.333333
-      type = VPaned
     
-    [[[vsplit1]]]
-      parent = vsplit0
-      ratio = 0.500000
-      type = VPaned
+    [[[terminal3]]]
+      command = ' echo "==== ls /mnt ===="; ls /mnt; bash '
+      order = 3
+      parent = hsplit2
+      profile = default
+      type = Terminal
     [[[window0]]]
       parent = ""
       type = Window

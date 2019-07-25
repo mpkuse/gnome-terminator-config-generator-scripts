@@ -16,13 +16,20 @@ python vertical_n.py  > /tmp/terminator_config  ; terminator -g /tmp/terminator_
 
 ### horizontal_n.py
 
-todo 
+
+```
+python horizontal_n.py  > /tmp/terminator_config  ; terminator -g /tmp/terminator_config
+```
+
+![](pics/horizontal_n.png)
 
 ### grid_nxm.py
 todo
 
 ## TODO
 Use arg_parse to make all ready scripts more user friendly.
+
+PR welcome!
 
 ## Contributors
 Manohar Kuse <mpkuse@connect.ust.hk> <https://github.com/mpkuse/>
