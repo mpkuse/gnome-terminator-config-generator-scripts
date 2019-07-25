@@ -1,0 +1,40 @@
+[global_config]
+[keybindings]
+[layouts]
+  [[default]]
+    
+    [[[terminal0]]]
+      command = ' echo "==== ls / ===="; ls /; bash '
+      order = 0
+      parent = vsplit1
+      profile = default
+      type = Terminal
+    
+    [[[terminal1]]]
+      command = ' echo "==== ls /home ===="; ls /home; bash '
+      order = 1
+      parent = vsplit0
+      profile = default
+      type = Terminal
+    
+    [[[terminal2]]]
+      command = ' echo "==== ls / ===="; ls /; bash '
+      order = 2
+      parent = vsplit1
+      profile = default
+      type = Terminal
+    [[[vsplit0]]]
+      parent = window0
+      ratio = 0.333333
+      type = VPaned
+    
+    [[[vsplit1]]]
+      parent = vsplit0
+      ratio = 0.500000
+      type = VPaned
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
